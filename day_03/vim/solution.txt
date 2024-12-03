@@ -1,0 +1,12 @@
+Steps:
+
+:%s/.\{-}\(mul(\d\+,\d\+)\).\{-}/\1/g
+
+VGJ
+
+x
+
+:s/mul(\(\d\+\),\(\d\+\))/(\1*\2)+/g
+
+A<Backspace><Esc>
+0C<C-r>=<C-r>"<Enter>
